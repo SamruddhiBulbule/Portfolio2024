@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Thinking</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["Antonio:100,200,300,regular,500,600,700"]
+            }
+        });
+    </script>
+    <style>
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            /* overflow: hidden; */
+        }
+
+        .al_c {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+            background-color: rgb(12, 12, 12);
+        }
+
+
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #af6dff;
+            /* border-radius: 10px; */
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8351c0;
+        }
+
+
+        .gallery-item {
+            margin-bottom: 0px;
+        }
+
+        #menu {
+            background-color: rgb(12, 12, 12);
+            padding: 20px;
+            padding-right: 10px;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            min-width: 100px;
+            display: block;
+
+        }
+
+        @media (max-width: 1024px) {
+            #menu {
+                display: none;
+                /* Hide the menu on screens smaller than a laptop */
+            }
+        }
+
+        .menu-option {
+            padding-bottom: 8px;
+            color: aliceblue;
+
+        }
+
+        .menu-option:hover {
+            color: #af6dff;
+            cursor: pointer;
+        }
+
+        .menu-option1:hover {
+            color: #dedede;
+            cursor: pointer;
+
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            /* position: fixed; */
+        }
+
+        #navbar {
+            background-color: #fbfbfb;
+
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: block;
+            transition: top 0.3s;
+            z-index: 9999;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(251, 251, 251, 0.8);
+            /* Use rgba to set the background color with opacity */
+            backdrop-filter: blur(10px);
+            /* Apply blur effect */
+            padding: 10px;
+
+            z-index: 1000;
+            transition: top 0.3s;
+        }
+    </style>
+</head>
+
+<body style="background-color:#14171D;">
+    
+    <main id="smooth-content" class="main-wrapper">
+
+
+        <div id="navbar">
+
+
+            <a href="index.html">
+                <div class="header">
+                    <div class="name-logo" style="color: rgb(12, 12, 12);">
+
+                        SAMRUDDHI BULBULE
+                    </div>
+                    <div class="logo">
+                        <img src="logo_hoc.png" alt="Logo">
+                    </div>
+
+                </div>
+            </a>
+
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="container-fluid" style="width: 88%;">
+
+            <div id="menu" style="position: fixed; z-index: 999; transform: translateY(-50%); top: 50%;  right: 0">
+
+                <div>
+                    <div class="menu-option" onclick="scrollToImage('context')">(Context)</div>
+                    <div class="menu-option" onclick="scrollToImage('secondary')">(Secondary)</div>
+                    <div class="menu-option" onclick="scrollToImage('primary')">(Primary)</div>
+                    <div class="menu-option" onclick="scrollToImage('synthesis')">(Synthesis)</div>
+                    <div class="menu-option" onclick="scrollToImage('visualize')">(Visualize)</div>
+                    <div class="menu-option" onclick="scrollToImage('framework')">(framework)</div>
+                </div>
+
+            </div>
+            <div id="menu"
+                style="position: fixed; z-index: 999; transform: translateY(-50%); top: 30%;  right: 0; background-color: #8C24C5;">
+
+                <div>
+                    <div class="menu-option menu-option1" onclick="scrollToImage('giga')">(Giga map)</div>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/1.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/Final GIGA MAP for Potfolio.png" class="img-fluid" alt="giga map"
+                        id="giga">
+                </div>
+
+
+                <div class="col-md-12 gallery-item">
+                    <div class="iframe-container">
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp2wCuXf1hOtyi5PPFmMV1e%2FDP3-links-for-portfolio%3Ftype%3Ddesign%26node-id%3D3%253A2010%26mode%3Ddesign%26t%3D1KQIStKuyCXUVSHT-1"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/2.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/3.png" class="img-fluid" alt="Placeholder Image 1" id="context">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/4.png" class="img-fluid" alt="Placeholder Image 1" id="secondary">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/5.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/6.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/7.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/8.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+
+
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/9.png" class="img-fluid" alt="Placeholder Image 1" id="primary">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/10.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+
+
+
+                <style>
+                    .button1 {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        padding: 10px 20px;
+                        background-color: #a3a7cb;
+                        color: #000000;
+                        border: none;
+                        border-radius: 24px;
+                        text-decoration: none;
+                        z-index: 1;
+                        font-size: 28px;
+
+                        /* Shadow effect */
+                        /* Ensure button appears above image */
+                    }
+
+                    .button1:hover {
+                        background-color: #ffffff;
+                    }
+
+                    @media (min-width: 769px) {
+                        .button1 {
+                            font-size: 28px;
+
+                        }
+
+                        .gallery-item {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+
+                    @media (max-width: 769px) {
+                        .button1 {
+                            font-size: 14px;
+                            background-color: #9aa4fe;
+                        }
+
+                        .gallery-item {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                </style>
+                <div class="col-md-12 gallery-item" style="padding-top: 50px; padding-bottom: 50px;">
+                    <div class="image-container" style="position: relative;">
+                        <img src="./content/dp3/Link to Causal loop.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius: 24px;">
+                        <button onclick="window.open('https://kumu.io/shinidesign/vulnerability-causal');"
+                            class="button1">Causal Loop</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/11.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/12.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/13.png" class="img-fluid" alt="Placeholder Image 1" id="synthesis">
+                </div>
+
+
+
+                <div class="col-md-12 gallery-item" style="padding-top: 50px; padding-bottom: 50px;">
+                    <div class="image-container" style="position: relative;">
+                        <img src="./content/dp3/Link to Sythesis map.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius: 24px;">
+                        <button
+                            onclick="window.open('https://www.figma.com/file/p2wCuXf1hOtyi5PPFmMV1e/Synthesis-Map-DP3?type=design&node-id=0%3A1&mode=design&t=1KQIStKuyCXUVSHT-1');"
+                            class="button1">Synthesis Map</a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/14.png" class="img-fluid" alt="Placeholder Image 1" id="">
+                </div>
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/15.png" class="img-fluid" alt="Placeholder Image 1" id="visualize">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/16.png" class="img-fluid" alt="Placeholder Image 1" id="">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/17.png" class="img-fluid" alt="Placeholder Image 1" id="">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/18.png" class="img-fluid" alt="Placeholder Image 1" id="framework">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/19.png" class="img-fluid" alt="Placeholder Image 1" id="">
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Add more gallery items here -->
+            </div>
+        </div>
+
+
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </main>
+</body>
+<script>
+    function scrollToImage(imageId) {
+        var image = document.getElementById(imageId);
+        if (image) {
+            image.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+<style>
+    /* Styles for the iframe container */
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+        /* 16:9 aspect ratio */
+    }
+
+    /* Style for the iframe */
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Media query for screens smaller than a laptop */
+    @media (max-width: 1024px) {
+        .iframe-container {
+            padding-top: 100%;
+            margin-bottom: 20px;
+            height: 160px;
+        }
+    }
+</style>
+
+</html>

@@ -7,28 +7,62 @@
   <title>TED Data Narration</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap" rel="stylesheet">
-<script>
-// Query the elements
-const iframeEle = document.getElementById('iframe');
-const loadingEle = document.getElementById('loading');
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500&display=swap" rel="stylesheet">
+  <script>
+    // Query the elements
+    const iframeEle = document.getElementById('iframe');
+    const loadingEle = document.getElementById('loading');
 
-iframeEle.addEventListener('load', function () {
-    // Hide the loading indicator
-    loadingEle.style.display = 'none';
+    iframeEle.addEventListener('load', function () {
+      // Hide the loading indicator
+      loadingEle.style.display = 'none';
 
-    // Bring the iframe back
-    iframeEle.style.opacity = 1;
-});
+      // Bring the iframe back
+      iframeEle.style.opacity = 1;
+    });
 
 
-</script>
+  </script>
 
 </head>
 <style>
+
+
+
+
+
+
+.container-fluid {
+  padding: 0;
+  width: 100%; /* Ensure the container fills the available width */
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.gallery-item {
+  text-align: center; 
+  max-width: 100%; 
+}
+
+/* Adjust any specific styles for larger screens if needed */
+@media (min-width: 2000px) {
+  .container-fluid {
+    max-width: 88% /* Limit container width for larger screens if necessary */
+  }
+}
+
+
+
+
+
+
+
   img {
     max-width: 100%;
     max-height: 100%;
@@ -36,11 +70,7 @@ iframeEle.addEventListener('load', function () {
   }
 
 
-  .containerdiv {
-    border: 0;
-    float: left;
-    position: relative;
-  }
+
 
   .cornerimage {
     border: 0;
@@ -56,29 +86,29 @@ iframeEle.addEventListener('load', function () {
     flex-direction: column;
     /* -ms-flex-direction: column; */
   }
-  .longframe
-  {
+
+  .longframe {
     border: 0;
     position: absolute;
     top: 80px;
     left: 96px;
   }
-  .youtube
-  {
+
+  .youtube {
     border: 0;
     position: absolute;
     top: 200px;
     right: 410px;
   }
-  .duration
-  {
+
+  .duration {
     border: 0;
     position: absolute;
     top: 184px;
     left: 120px;
   }
-  .legend1
-  {
+
+  .legend1 {
     border: 0;
     position: absolute;
     top: 180px;
@@ -86,8 +116,8 @@ iframeEle.addEventListener('load', function () {
     width: 48%;
     height: 48%;
   }
-  .legend2
-  {
+
+  .legend2 {
     border: 0;
     position: absolute;
     top: 340px;
@@ -95,8 +125,8 @@ iframeEle.addEventListener('load', function () {
     width: 48%;
     height: 48%;
   }
-  .legend3
-  {
+
+  .legend3 {
     border: 0;
     position: absolute;
     top: 226px;
@@ -104,8 +134,8 @@ iframeEle.addEventListener('load', function () {
     width: 48%;
     height: 48%;
   }
-  .tedtopic
-  {
+
+  .tedtopic {
     border: 0;
     position: absolute;
     top: 472px;
@@ -113,8 +143,8 @@ iframeEle.addEventListener('load', function () {
     width: 48%;
     height: 48%;
   }
-  .legend4
-  {
+
+  .legend4 {
     border: 0;
     position: absolute;
     top: 428px;
@@ -122,10 +152,10 @@ iframeEle.addEventListener('load', function () {
     /* width: 48%;
     height: 48%; */
     /* text-align: center; */
-    
+
   }
-  .legend5
-  {
+
+  .legend5 {
     border: 0;
     position: absolute;
     top: 800px;
@@ -133,24 +163,24 @@ iframeEle.addEventListener('load', function () {
     /* width: 48%;
     height: 48%; */
     /* text-align: center; */
-    
+
   }
+
   section.center {
-  padding: 5vw;
-  padding-top: 5em;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  
- }
- 
-.box
-{
-    position: absolute; 
-    margin-left:20px ; 
-    padding-right: 350px; 
+    padding: 5vw;
+    padding-top: 5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+  }
+
+  .box {
+    position: absolute;
+    margin-left: 20px;
+    padding-right: 350px;
     margin-top: 150px;
     /* z-index: 1; */
     /* display: flex; */
@@ -160,59 +190,60 @@ iframeEle.addEventListener('load', function () {
     min-height: 50%; */
     width: 80%;
     height: 80%;
-    
-}
-.box1
-{
+
+  }
+
+  .box1 {
     float: left;
-    position: absolute; 
-    margin-left:100px ; 
-    padding-right: 350px; 
+    position: absolute;
+    margin-left: 100px;
+    padding-right: 350px;
     margin-top: 40px;
     /* z-index: 1; */
     /* display: flex; */
     flex-wrap: column;
     padding-bottom: 20px;
-}
-/* @media screen and (max-width: 900px) {
+  }
+
+  /* @media screen and (max-width: 900px) {
   .box {
     top:20;
   }
 } */
 
 
-.al_c {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-/* width */
-::-webkit-scrollbar {
-  width: 20px;
-  background-color: #2F2A2A;
-}
+  .al_c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: red; 
-  border-radius: 10px;
-}
+  /* width */
+  ::-webkit-scrollbar {
+    width: 20px;
+    background-color: #2F2A2A;
+  }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
-}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
 
-.textlegend
-{
-   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+  }
+
+  .textlegend {
+
     font-family: 'Wix Madefor Display', sans-serif;
     font-size: 18px;
     /* padding-top: 250px;
@@ -223,123 +254,135 @@ iframeEle.addEventListener('load', function () {
     /* text-align: center; */
     /* font-weight: lighter; */
 
-}
+  }
+
+
+
 
   
 </style>
 
 <body style="background-color: #211C1C;">
-<!-- <div class="container"> -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-    <!-- Title Slide -->
-    <div class="al_c">
-    
-      <img src="Title.png" alt="img" style="position: relative;">
-      <!-- <img class="cornerimage" src="tedgif.gif"> -->
-
-    </div>
-
-    <!-- Topic Distribution -->
-    <img src="Distribution.png" class="al_c">
 
 
-    <img src="TEDGlobalText.png" class="al_c">
-    <img src="loadinst.png" class="al_c">
-    <!-- Year Axis -->
-    <!-- <div style="background-color: #211C1C"><img src="CountofTalksAxis1.png"></div>  -->
-    <!-- <div style="background-color: #211C1C"><img src="YearsAxis1.png"> -->
-    
-      
-        <!-- <img src="Frame 82.png" alt="img"> -->
-        <section style="padding-left: 108px; padding-right: 108px;">
-            <div class="center">
-                <!-- <img src="Leg.png" style="position: absolute; margin-left:20px ; padding-right: 260px; padding-top: 150px; "> -->
-                <div class="box">
-                    <img src="Leg.png">
-                    <img src="Legends.png" style="padding-top: 20px;">
-                    <img src="TEDTopics.gif" style="padding-top: 20px;">
-                </div>
-                <div id="loading">
-                  <iframe id="iframe" width="100%" height="2350" frameborder="0"
-                  src="https://observablehq.com/embed/b8ec15c199c744c6?cells=viewof+sample1" loading="eager"></iframe>
-                </div>
-                
-                      </div>
-            </div>
-        </section>
-        
-        <!-- <div  class="legend1">
-          <img src="Leg.png" alt="">
-        </div>
-        <div class="legend2">
-          <img src="Legends.png" alt="">
-        </div>
-        <div class="tedtopic">
-          <img src="TEDTopics.gif" alt="">
-        </div> -->
-     
-      <div class="al_c">
-        <img src="Frame 87.png" alt="">
+
+
+
+  <div class="container-fluid">
+
+
+    <div class="row justify-content-center">
+      <div class="col-md-12 gallery-item">
+        <img src="Title.png" class="img-fluid" alt="Placeholder Image 1">
       </div>
-      <div class="al_c">
-        <img src="18minrule.png" alt="">
-      </div class="al_c">
-      <div class="containerdiv">
-        <!-- <img src=".png" alt=""> -->
-        <!-- <div class="youtube">
-          <a href="https://www.youtube.com/watch?v=-FOCpMAww28" target="_blank"><i class="fa fa-youtube-play" style="font-size:64px;color:#E62B1E"></i></a>
-        </div> -->
+      <div class="col-md-12 gallery-item">
+        <img src="Distribution.png" class="img-fluid" alt="Placeholder Image 1">
       </div>
-
-
-      <!-- <div class="containerdiv">
-        <img src="Last.png" alt="img">
-        <div class="duration">
-          <iframe width="1300" height="800" frameborder="0"
-          src="https://observablehq.com/embed/b8ec15c199c744c6?cells=viewof+sample4"></iframe>
+      <div class="col-md-12 gallery-item">
+        <img src="TEDGlobalText.png" class="img-fluid" alt="Placeholder Image 1">
+      </div>
+      <div class="col-md-12 gallery-item">
+        <img src="loadinst.png" class="img-fluid" alt="Placeholder Image 1">
+      </div>
+      <div class="col-md-12">
+        <div class="box">
+          <img src="Leg.png">
+          <img src="Legends.png" style="padding-top: 20px;">
+          <img src="TEDTopics.gif" style="padding-top: 20px;">
         </div>
-        <div class="legend4" style="color: #f5f5f5; font-size: 20px; font-family: Wix Madefor Display; font-weight: 500; word-wrap: break-word">Maximum Duration</div>
-        <div class="legend5" style="color: #f5f5f5; font-size: 20px; font-family: Wix Madefor Display; font-weight: 500; word-wrap: break-word">Average Duration</div>
-        <div class="legend3">
-          <img src="Legends.png" alt="">
+        <div id="loading">
+          <iframe id="iframe" width="100%" height="2350" frameborder="0"
+            src="https://observablehq.com/embed/b8ec15c199c744c6?cells=viewof+sample1" loading="eager"></iframe>
         </div>
-      </div> -->
-      <div class="container-fluid" style="background-color: #2F2A2A; padding-left: 50px; padding-top:60px; padding-bottom: 50px;">
+      </div>
+      <div class="col-md-12 gallery-item">
+
+        <img src="Frame 87.png" class="img-fluid" alt="Placeholder Image 1">
+      </div>
+      <div class="col-md-12 gallery-item">
+
+        <img src="18minrule.png" class="img-fluid" alt="Placeholder Image 1">
+      </div>
+      <!-- <div class="col-md-12">
         <div class="row">
-            <div class="col-md-6 textlegend" style="padding-left: 88px; text-wrap: wrap; color: #d9d9d9;">Before Anderson, TED talks were long and rambling. He changed that with a simple rule: 18 minutes. This forced speakers to get to the point quickly and keep their audiences engaged. Today, the 18-minute rule is one of the hallmarks of TED talks.</div>
-       <div class="col-md-6 embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" width="84%" height="400" src="https://www.youtube.com/embed/-FOCpMAww28?si=D_rNy5YD8FPoBGMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="eager"></iframe>
+          <div class="col-md-6 textlegend"
+            style="padding-left: 80px;padding-top: 80px;padding-right: 80px; padding-bottom: 80px; text-wrap: wrap; color: #d9d9d9;">
+            Before Anderson, TED
+            talks were long and rambling. He changed that with a simple rule: 18 minutes. This forced speakers to get to
+            the
+            point quickly and keep their audiences engaged. Today, the 18-minute rule is one of the hallmarks of TED
+            talks.
+          </div>
+          <div class="col-md-6 embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="84%" height="400"
+              src="https://www.youtube.com/embed/-FOCpMAww28?si=D_rNy5YD8FPoBGMs" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen loading="eager"></iframe>
 
-       </div>
+          </div>
         </div>
-    </div>
-    <img src="loadinst.png" class="al_c">
 
 
+      </div> -->
 
-    <section style="padding-left: 120px; padding-right: 120px;">
-        <div class="center">
-            <div class="box1">
-                
-                <img src="Legends short1.png" style="padding-top: 8px;">
-                
+
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="textlegend" style="padding: 80px; color: #d9d9d9;
+              display: flex;
+  align-items: center;
+  height: 480px;">
+              Before Anderson, TED talks were long and rambling. He changed that with a simple rule: 18 minutes. This forced speakers to get to the point quickly and keep their audiences engaged. Today, the 18-minute rule is one of the hallmarks of TED talks.
             </div>
-            <!-- <div class="textlegend" style="color: #f5f5f5;">Maximum Duration</div> -->
-            <iframe width="100%" height="750" frameborder="0"
-  src="https://observablehq.com/embed/b8ec15c199c744c6?cells=viewof+sample4" loading="eager"></iframe>
-                  </div>
+          </div>
+          <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" width="100%" height="480"
+                src="https://www.youtube.com/embed/-FOCpMAww28?si=D_rNy5YD8FPoBGMs" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen loading="eager"></iframe>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+      
+
+      <div class="col-md-12 gallery-item">
+
+        <img src="loadinst.png" class="img-fluid" alt="Placeholder Image 1">
+      </div>
+      
+      <div class="col-md-12">
+        <div class="box1">
+
+          <img src="Legends short1.png" style="padding-top: 8px;">
+
+        </div>
+        <!-- <div class="textlegend" style="color: #f5f5f5;">Maximum Duration</div> -->
+        <iframe width="100%" height="750" frameborder="0"
+          src="https://observablehq.com/embed/b8ec15c199c744c6?cells=viewof+sample4" loading="eager"></iframe>
 
 
-    <img src="Overview.png" class="al_c">
-    <img src="Process-1.png" class="al_c">
-    <img src="Process-2.png" class="al_c">
-    <!-- <img src="thank you.png" class="al_c"> -->
-    
-    <!-- </div> -->
+      </div>
+
+      <div class="col-md-12 gallery-item">
+
+        <img src="Overview.png" class="img-fluid" alt="Placeholder Image 1">
+      </div>
+      <div class="col-md-12 gallery-item">
+
+        <img src="Process-1.png" class="img-fluid" alt="Placeholder Image 1">
+      </div>
+      <div class="col-md-12 gallery-item">
+
+        <img src="Process-2.png" class="img-fluid" alt="Placeholder Image 1">
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>

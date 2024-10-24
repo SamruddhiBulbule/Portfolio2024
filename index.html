@@ -6,26 +6,16 @@
 <head>
     <meta charset="utf-8" />
     <title>Samruddhi Bulbule</title>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+
     <!-- <meta content="Webflow" name="generator" /> -->
     <link href="stylesheet.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        button.resume {
-            background-color: #af6dff;
-            border-radius: 12px;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 28px;
-            opacity: 1;
-
-        }
-
-
         @media (min-width: 992px) {
             html.w-mod-js:not(.w-mod-ix) [data-w-id="8bf6c6f2-9b2a-c09d-7b84-266d1308dc1c"] {
                 opacity: 0;
@@ -158,7 +148,130 @@
         rel="apple-touch-icon" />
 
     <script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-scrolldisable@1/scrolldisable.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <style>
+        .card {
+            overflow: hidden;
+            /* Ensures that the image doesn't overflow the card */
+            border-radius: 16px;
+        }
+
+        .card-img-top {
+            transition: transform 0.3s ease;
+            /* Smooth transition for the transformation */
+        }
+
+
+        .card:hover .card-img-top {
+            transform: scale(1.1);
+            /* Scale the image on hover */
+        }
+
+        .card:hover .card-img-top1 {
+            transform: scale(1.03);
+            /* Scale the image on hover */
+        }
+
+        .hover-content {
+            display: none;
+            /* Hide the hover content initially */
+
+        }
+
+        .card:hover .default-content {
+            display: none;
+            /* Hide the default content on hover */
+        }
+
+        .card:hover .hover-content {
+            display: block;
+
+            /* Show the hover content on hover */
+        }
+
+        .card:hover .card-image {
+            transform: scale(1.1);
+            /* Scale the image on hover */
+        }
+
+        .cat_description {
+            font-family: "Raleway", sans-serif;
+            font-size: 0.9rem;
+            color: aliceblue;
+            text-align: left;
+            text-transform: none;
+            line-height: 1.3rem;
+
+        }
+
+        .project_container .card {
+            font-family: "Raleway", sans-serif;
+            background-color: var(--white);
+            text-align: left;
+
+        }
+
+        .project_container .card-title {
+
+            text-align: left;
+            font-size: 1.2rem;
+            color: black;
+            line-height: 2rem;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        .project_container .card-text .badge {
+
+            text-align: left;
+            font-size: 0.9rem;
+
+            color: rgb(78, 78, 78);
+            /* Text color */
+            background-color: transparent;
+            /* No fill */
+            border: 1px solid rgb(192, 192, 192);
+            /* Grey stroke */
+            margin-bottom: 8px;
+
+            /* Add some spacing between badges */
+            font-weight: normal;
+            /* Set font weight to normal */
+            padding: 12px;
+            /* Add padding: vertical | horizontal */
+            border-radius: 20px;
+            /* Rounded corners */
+            text-transform: capitalize;
+            /* display: flex; */
+            flex-wrap: wrap;
+
+            /* align-items: center; */
+        }
+
+        .card-text {
+
+            text-align: left;
+        }
+
+        .arrow {
+            font-size: 24px;
+            color: #ff4500;
+            /* Change this to your desired color */
+            animation: moveArrow 2s infinite alternate;
+        }
+
+        @keyframes moveArrow {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(20px);
+                /* Adjust this value based on your design */
+            }
+        }
+
         .split-line {
             overflow: auto;
         }
@@ -548,7 +661,8 @@ a,
                                 <div class="overflow_hidden">
                                     <div class="overflow__vertical">
                                         <div class="overflow__txt" style="font-size: 20px;">( ABOUT )</div>
-                                        <div class="overflow__txt mod--absolute" style="font-size: 20px;">( ABOUT )</div>
+                                        <div class="overflow__txt mod--absolute" style="font-size: 20px;">( ABOUT )
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -567,7 +681,18 @@ a,
                                 <div class="overflow_hidden">
                                     <div class="overflow__vertical">
                                         <div class="overflow__txt" style="font-size: 20px;">( SKILLS )</div>
-                                        <div class="overflow__txt mod--absolute" style="font-size: 20px;">( SKILLS )</div>
+                                        <div class="overflow__txt mod--absolute" style="font-size: 20px;">( SKILLS )
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" data-remodal-target="form" data-anim="btn"
+                                data-w-id="c6763564-70df-6ce3-e000-19c5c23ff31f" class="navbar_link w-inline-block">
+                                <div class="overflow_hidden">
+                                    <div class="overflow__vertical">
+                                        <div class="overflow__txt" style="font-size: 20px;">( RESUME )</div>
+                                        <div class="overflow__txt mod--absolute" style="font-size: 20px;">( RESUME )
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -644,7 +769,7 @@ a,
                                                         </div>
                                                     </a>
                                                 </div>
-                                                <div id="w-node-_453a6414-082e-cf83-de82-09ad57cb64c1-34dfd873"
+                                                <div id=""
                                                     style="-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
                                                     class="into-view-2">
                                                     <a href="#scrollskills" class="navbar-link _2 w-inline-block">
@@ -654,6 +779,30 @@ a,
                                                             </div>
                                                             <div class="button-text button-text-bottom">
                                                                 <div class="text-size-large">[ SKILLS ]</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="clip-2">
+                                                            <div class="button-icon">
+                                                                <img src="https://assets-global.website-files.com/65523f13f8e3b9b3419c2a70/655789eb118125aad6bc8b08_Right%20arrow%20slant%20-%20%20WHITE.svg"
+                                                                    alt="" class="icon-1x1-small" />
+                                                            </div>
+                                                            <div class="button-icon button-icon-bottom">
+                                                                <img src="https://assets-global.website-files.com/65533b6adbbfe79d45228ee5/65533b6adbbfe79d45229005_Right%20arrow%20slant%20-%20dark.svg"
+                                                                    alt="" class="icon-1x1-small" />
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div id=""
+                                                    style="-webkit-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 2rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+                                                    class="into-view-2">
+                                                    <a href="" class="navbar-link _2 w-inline-block">
+                                                        <div class="clip-2">
+                                                            <div class="button-text">
+                                                                <div class="text-size-large">[ RESUME ]</div>
+                                                            </div>
+                                                            <div class="button-text button-text-bottom">
+                                                                <div class="text-size-large">[ RESUME ]</div>
                                                             </div>
                                                         </div>
                                                         <div class="clip-2">
@@ -699,6 +848,7 @@ a,
 
                         <a href="#" class="navbar_link w-nav-link">[ WORK ]</a>
                         <a href="#" class="navbar_link w-nav-link">[ skills ]</a>
+                        <a href="#" class="navbar_link w-nav-link">[ RESUME ]</a>
 
                         <div class="rl_navbar1_menu-buttons">
                             <a href="#" class="rl_navbar1_button-secondary w-button">Button</a>
@@ -723,20 +873,9 @@ a,
                             <div class="hero_component">
                                 <div class="title_container">
                                     <div class="title_text-center _3-colomnes">
-                                        <h1 class="text-align_left split-text-chars-hero" style="color:#9c4cfd;">
-                                            UX DESIGNER</h1>
-                                        <div class="image-bulle white">
-                                            <div data-autoplay="true" data-loop="true" data-wf-ignore="true"
-                                                class="background-video w-background-video w-background-video-atom">
-                                                <video autoplay="true" loop="" muted="" playsinline=""
-                                                    data-wf-ignore="true" data-object-fit="cover">
-                                                    <source src="neon-infused-retro-electro-with-jaw-animation (3).mp4"
-                                                        data-wf-ignore="true" />
+                                        <h1 class="text-align_left split-text-chars-hero">
+                                            UX <span style="color:#9c4cfd;">&</span> PRODUCT DESIGNER</h1>
 
-                                                </video>
-                                            </div>
-
-                                        </div>
 
                                     </div>
                                     <div class="title_text-center">
@@ -748,18 +887,22 @@ a,
                                                     class="background-video w-background-video w-background-video-atom">
                                                     <video autoplay="" loop="" muted="" playsinline=""
                                                         data-wf-ignore="true" data-object-fit="cover">
-                                                        <source src="mapvideo (1).mp4" data-wf-ignore="true" />
+                                                        <source
+                                                            src="neon-infused-retro-electro-with-jaw-animation (3).mp4"
+                                                            data-wf-ignore="true" />
 
                                                     </video>
                                                 </div>
 
                                             </div>
-                                            <h1 class="split-text-chars-hero">RESEARCHER</h1>
+                                            <h1 class="split-text-chars-hero" style="color:#9c4cfd; ">
+                                                RESEARCHER</h1>
                                         </div>
                                     </div>
                                     <div class="title_text-center thirty">
                                         <div class="div">
-                                            <h1 class="text-align_right split-text-chars-hero" style="color:#9c4cfd;">
+                                            <h1 class="text-align_right split-text-chars-hero"
+                                                style="color:#9c4cfd;">
                                                 DATA
                                             </h1>
                                             <div class="image-bulle middle">
@@ -774,18 +917,31 @@ a,
                                                 </div>
 
                                             </div>
-                                            <h1 class="text-align_left split-text-chars-hero">NARRATOR</h1>
+                                            <h1 class="text-align_left split-text-chars-hero">
+                                                NARRATOR</h1>
                                         </div>
                                     </div>
                                     <div class="subtitle_wrapper">
-                                        <p class="caption white hide-mobile" style="font-size: 24px; color:#D6B4FF;">1999</p>
-                                        <p class="caption white" style="font-size: 24px; color:#D6B4FF;">NID, BENGALURU</p>
-                                        <p class="caption white" style="font-size: 24px; color:#D6B4FF;">AVAILABLE TO WORK</p>
-                                        <p class="caption white" style="font-size: 24px; color:#D6B4FF;">DESIGN THINKING</p>
+                                        <p class="caption white" style="color:#D6B4FF; ">SAMRUDDHI
+                                            BULBULE
+                                        </p>
+
+                                        <p class="caption white" style="color:#D6B4FF;">NID, BENGALURU
+                                        </p>
+
+                                        <p class="caption white" style="color:#D6B4FF;">PURSUING DESIGN
+                                        </p>
 
                                     </div>
+                                    <div class="arrow" id="arrow">
+                                        <svg width="24" height="24" fill="#9c4cfd" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 22l-10-10h6V2h8v10h6z" />
+                                        </svg>
+                                    </div>
                                 </div>
+
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -866,424 +1022,39 @@ a,
                                         }
                                     }
                                 </style>
-                                <a href="https://docs.google.com/document/d/1ePk_A6sHNWy-xXTmbWNI8_0r6XbYNq6XnyCbZ49EiY0/edit?usp=sharing"
-                                    target="_blank">
-                                    <button class="btn btn-success btn-circle btn-xl">
-                                        <i class="fa fa-print" style="font-size: 28px;"></i>
-                                    </button>
-                                </a>
+
                             </section>
+
                             <div class="about_wrapper">
-
-                                <div class="html-embed w-embed">
-                                    <style>
-                                        /*.blocks-wrapper {
-	position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: space-between;
-  justify-content: space-between;
-}*/
-                                        .block {
-                                            width: 75px;
-                                            height: 75px;
-                                            opacity: 0;
-                                            mix-blend-mode: hard-light;
-                                            /*background: #0c0c0c;*/
-                                            background: #8C24C5;
-                                            transition: opacity 0.3 ease-in;
-                                        }
-
-                                        .block.active {
-                                            opacity: 0.75;
-                                        }
-                                    </style>
-                                </div>
-
-                                <div class="blocks-wrapper">
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                    <div class="block"></div>
-                                </div>
-
-                                <div class="background-overlay"></div>
 
                                 <div class="about_component">
 
 
-                                    
-                                    <p style="font-size: 20px; padding-top: 20px;">click for resume</p>
-                                    <div class="spacer-65px"></div>
-                                   
+
+
                                     <div class="">
-                                       
-                                        <img src="./me.png">
+
+                                        <img src="./about.png">
 
 
                                     </div>
 
-                                    <div class="spacer-90px"></div>
+                                    <div class="spacer-65px"></div>
 
                                     <div class="block_paragraph_about-2">
-                                        <p class="split">I design user-focused digital experiences<br />
-                                            that integrate research, data, narrative, and visuals to create impactful
-                                            and engaging design solutions.</p>
+                                        <p class="split"
+                                            style="text-align: left; text-transform: none; font-family: Raleway;">
+                                            I design user-focused digital experiences that integrate research, data,
+                                            narrative, and visuals to create impactful and engaging design solutions.
+                                            <a href="" style="color: #8C24C5; text-decoration: none; font-weight: 500;"
+                                                onmouseover="this.style.color='#9c4cfd'; this.style.textDecoration='none'; this.style.transform='scale(1.2)';"
+                                                onmouseout="this.style.color='#8C24C5'; this.style.textDecoration='none'; this.style.transform='scale(1)';">
+                                                Here is my resume!
+                                            </a>
+                                        </p>
+
+
+
                                     </div>
 
 
@@ -1301,7 +1072,7 @@ a,
                     <div class="container-large">
 
 
-                        <div class="projects_wrapper">
+                        <div class="projects_wrapper" id="projects">
 
 
                             <div class="projects hide">
@@ -1373,142 +1144,312 @@ a,
 
 
                             </div>
-                            <div id="projects" class="spacer-65px"></div>
+                            <div class="spacer-65px"></div>
+
+
                             <p class="caption-white" style="font-size: 24px;">( WORK )</p>
-                            <div class="scene">
-                                <div class="scene---sticky">
-                                    <div class="section">
-                                        <div class="spiral">
-                                            <div class="spiral---rotate x-00">
-                                                <a href="MealMate1.html" target="_blank"
-                                                    class="spiral---item w-inline-block">
-                                                    <img src="./content/covers/mealmatecover1.png" loading="eager"
-                                                        width="814"
-                                                        sizes="(max-width: 767px) 100vw, (max-width: 1279px) 478.393798828125px, 37vw"
-                                                        alt="" srcset="./content/covers/mealmatecover1.png"
-                                                        class="spiral---img" />
-                                                </a>
-                                                <div class="spiral---rotate">
-                                                    <a href="RMS.html"
-                                                        target="_blank" class="spiral---item x-01 w-inline-block">
-                                                        <img src="./content/covers/RMScover1.png" loading="eager"
-                                                            sizes="(max-width: 767px) 100vw, (max-width: 1279px) 234.00863647460938px, 18vw"
-                                                            srcset="./content/covers/RMScover1.png" alt=""
-                                                            class="spiral---img" />
-                                                    </a>
-                                                    <div class="spiral---item x-01 hide"></div>
-                                                    <div class="spiral---rotate">
-                                                        <a href="UIDAI.html" target="_blank"
-                                                            class="spiral---item x-02 w-inline-block">
-                                                            <img src="./content/covers/uidaicover1.png" loading="eager"
-                                                                sizes="(max-width: 767px) 100vw, (max-width: 1279px) 94.34371948242188px, 7vw"
-                                                                srcset="./content/covers/uidaicover1.png" alt=""
-                                                                class="spiral---img" />
-                                                        </a>
-                                                        <div class="spiral---item x-02 hide"></div>
-                                                        <div class="spiral---rotate">
-                                                            <a href="SolapurTextile.html" target="_blank"
-                                                                class="spiral---item x-03 w-inline-block">
-                                                                <img src="./content/covers/solapurtextilecover1.png"
-                                                                    loading="eager"
-                                                                    sizes="(max-width: 767px) 100vw, (max-width: 1279px) 215.4363250732422px, 17vw"
-                                                                    srcset="./content/covers/solapurtextilecover1.png" alt=""
-                                                                    class="spiral---img" />
-                                                            </a>
-                                                            <div class="spiral---item x-03 hide"></div>
-                                                            <div class="spiral---rotate">
-                                                                <a href="SystemDesign.html"
-                                                                    target="_blank"
-                                                                    class="spiral---item x-04 w-inline-block">
-                                                                    <img src="./content/covers/hoccover1.png"
-                                                                        loading="eager"
-                                                                        sizes="(max-width: 767px) 100vw, (max-width: 1279px) 222.05941772460938px, 17vw"
-                                                                        srcset="./content/covers/hoccover1.png"
-                                                                        alt="" class="spiral---img" />
-                                                                </a>
+                            <div class="spacer-65px"></div>
+
+                            <div class="container-fluid project_container" id="projectContainer1">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h3 style="text-align: left; color: aliceblue;">Industry Projects</h3>
+                                        <p class="cat_description">
+                                            This section highlights two key projects from my internships, showcasing my
+                                            approach to design challenges while adhering to NDA confidentiality. Each
+                                            project summarizes the goals, solutions, and user impact.</p>
+                                    </div>
 
 
-                                                            </div>
-                                                            <div class="spiral---item x-04 hide"></div>
 
 
-                                                        </div>
+                                    <div class="col-md-6">
+                                        <a href="GP.html" style="text-decoration: none; color: inherit;">
+                                            <div class="card mb-4">
+                                                <img src="content/covers/GPcover1.png"
+                                                    class="card-img-top card-img-top1" alt="Project Image 2">
+                                                <div class="card-body">
+
+                                                    <div class="default-content">
+                                                        <p class="card-title">Dynamic Real-Time Warehouse Mapping for
+                                                            Autonomous
+                                                            Mobile Robots <br> @Continental Automotive 2024(Ongoing)
+                                                        </p>
+
+                                                        <p class="card-text">
+
+                                                            <span class="badge badge-primary">#ProductDesign </span>
+                                                            <span class="badge badge-primary">#UserExperienece </span>
+                                                            <span class="badge badge-primary">#Cartography </span>
+                                                            <span class="badge badge-primary">#Interaction Design</span>
+                                                            <span class="badge badge-primary">#Design System</span>
+
+                                                           
+                                                            <span class="badge badge-primary">#Logistics </span>
+                                                            <span class="badge badge-primary">#Robotics </span>
+                                                            <span class="badge badge-primary">#Automation </span>
+
+
+
+
+
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="hover-content">
+                                                        <p class="card-title">Dynamic Real-Time Warehouse Mapping for
+                                                            Autonomous
+                                                            Mobile Robots <br> @Continental Automotive 2024(Ongoing)
+                                                        </p>
+
+                                                        <p
+                                                            style=" text-align: left;font-size: 0.9rem;text-transform: none;line-height: 1.3rem;">
+                                                            As a member of the Global AMR Team, I was responsible for
+                                                            the end-to-end research and design of the Map Module, which
+                                                            is essential for managing and editing map properties helping
+                                                            robots to navigate in warehouse. It serves as a virtual
+                                                            representation of the warehouse floor, providing a real-time visual overview of
+                                                            the autonomous mobile robots movements. </p>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
-                                </div>
-                                <div data-w-id="c23abbe0-709d-f921-cab1-7d9485c668d3" class="scene---trigger">
-                                </div>
-                                <div class="scene---extra"></div>
-                            </div>
-                            <div class="gallery-mobile">
-                                <div class="gallery-wrapper">
-                                    <a data-w-id="14be437c-2576-46e4-1625-e4c779d78aa7" href="MealMate1.html"
-                                        target="_blank" class="block-item w-inline-block">
-                                        <div class="img-content">
-                                            <img src="./content/covers/mealmatecover2.png"
-                                                sizes="(max-width: 767px) 90vw, 100vw"
-                                                srcset="./content/covers/mealmatecover2.png" alt="" class="item-img" />
-                                        </div>
-                                        <p class="white">
-                                            MEALMATE<br />SERVICE DESIGN | UX
-                                        </p>
-                                    </a>
-                                    <a data-w-id="999ca738-ee27-e47e-143b-ee151ec38e22" href="RMS.html"
-                                        target="_blank" class="block-item w-inline-block">
-                                        <div class="img-content">
-                                            <img src="./content/covers/RMScover2.png"
-                                                sizes="(max-width: 767px) 90vw, 100vw"
-                                                srcset="./content/covers/RMScover2.png" alt="" class="item-img" />
-                                        </div>
-                                        <p class="white">
-                                            RMS<br />UX & Devlopment
-                                        </p>
-                                    </a>
-                                    <a data-w-id="a147cce2-a944-417b-8e5f-7caf7d6a32cf"
-                                        href="UIDAI.html" target="_blank"
-                                        class="block-item w-inline-block">
-                                        <div class="img-content">
-                                            <img src="./content/covers/uidaicover2.png"
-                                                sizes="(max-width: 767px) 90vw, 100vw"
-                                                srcset="./content/covers/uidaicover2.png" alt="" class="item-img" />
-                                        </div>
-                                        <p class="white">
-                                            UIDAI<br />UX Case Study
-                                        </p>
-                                    </a>
-                                    <a data-w-id="127afd7f-e03e-e6ff-d129-681c811281a2" href="SolapurTextile.html"
-                                        target="_blank" class="block-item w-inline-block">
-                                        <div class="img-content">
-                                            <img src="./content/covers/solapurtextilecover2.png"
-                                                sizes="(max-width: 767px) 90vw, 100vw"
-                                                srcset="./content/covers/solapurtextilecover2.png" alt=""
-                                                class="item-img" />
-                                        </div>
-                                        <p class="white">
-                                            Solapur Textile<br />Interactive Website
-                                        </p>
 
-                                    </a>
-                                    <a href="SystemDesign.html"
-                                        target="_blank" class="block-item w-inline-block">
-                                        <div class="img-content">
-                                            <img src="./content/covers/hoccover2.png"
-                                                sizes="(max-width: 767px) 90vw, 100vw"
-                                                srcset="./content/covers/hoccover2.png" alt=""
-                                                class="item-img" />
-                                        </div>
-                                        <p class="white">
-                                            House of Vulnerabilities <br />System Thinking
-                                        </p>
+                                    <div class="col-md-3">
+                                        <a href="RMS.html" style="text-decoration: none; color: inherit;">
+                                            <div class="card mb-4">
+                                                <img src="content/covers/RMScover1.png" class="card-img-top"
+                                                    alt="Project Image 2">
+                                                <div class="card-body">
+                                                    <div class="default-content">
+                                                        <p class="card-title">Restaurant Management System @SMiT
+                                                            Solutions 2021</p>
 
-                                    </a>
-                                    
+                                                        <p class="card-text">
+                                                            <span
+                                                                class="badge badge-primary">#OperationalEfficiency</span>
+                                                            <span class="badge badge-primary">#UserInterface
+                                                            </span>
+                                                            <span class="badge badge-primary">#DevCollab</span>
+                                                            <span class="badge badge-primary">#WebDevlopement</span>
+
+
+                                                        </p>
+                                                    </div>
+                                                    <div class="hover-content">
+                                                        <p class="card-title">Restaurant Management System @SMiT
+                                                            Solutions 2021</p>
+
+                                                        <p
+                                                            style=" text-align: left;font-size: 0.9rem;text-transform: none;line-height: 1.3rem;">
+                                                            I designed & developed restaurant management system which is
+                                                            comprehensive product helps restaurants to manage, monitor,
+                                                            control business activities. </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
 
                                 </div>
                             </div>
+                            <div class="arrow" id="arrow">
+                                <svg width="24" height="24" fill="#9c4cfd" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 22l-10-10h6V2h8v10h6z" />
+                                </svg>
+                            </div>
+                            <div style="height: 20px; margin: 20px 0;"></div>
+                            <div style="height: 1px; background-color: #9c4cfd;margin: 20px 0;"></div>
+                            <div class="container-fluid mt-4 project_container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h3 style="text-align: left; color: aliceblue;">Case Studies</h3>
+                                        <p class="cat_description">
+                                            Explore my design projects showcasing user-centered solutions,
+                                            methodologies, and impactful results.</p>
+                                    </div>
+
+
+
+                                    <div class="col-md-3">
+                                        <a href="MealMate.html" style="text-decoration: none; color: inherit;">
+                                            <div class="card mb-4">
+                                                <img src="content/covers/mealmatecover1.png" class="card-img-top"
+                                                    alt="Project Image 2">
+                                                <div class="card-body">
+                                                    <div class="default-content">
+                                                        <p class="card-title">MealMate <br>Empowering Meal Vendors</p>
+
+                                                        <p class="card-text">
+                                                            <span class="badge badge-primary">#ServiceDesign </span>
+                                                            <span class="badge badge-primary">#MobileApp </span>
+                                                            <span class="badge badge-primary">#UX </span>
+                                                            <span class="badge badge-primary">#FoodIndustry </span>
+
+                                                        </p>
+                                                    </div>
+                                                    <div class="hover-content">
+                                                        <p class="card-title">MealMate <br>Empowering Meal Vendors</p>
+                                                        <p
+                                                            style=" text-align: left;font-size: 0.9rem;text-transform: none;line-height: 1.3rem;">
+                                                            This case study focuses on research & solution for business
+                                                            growth of meal vendors by understanding their challenegs &
+                                                            needs.</p>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <a href="UIDAI.html" style="text-decoration: none; color: inherit;">
+                                            <div class="card mb-4">
+                                                <img src="content/covers/uidaicover1.png" class="card-img-top"
+                                                    alt="Project Image 2">
+                                                <div class="card-body">
+
+                                                    <div class="default-content">
+                                                        <p class="card-title">Transforming Aadhaar PVC <br>Digital
+                                                            Experience
+                                                        </p>
+
+                                                        <p class="card-text">
+                                                            <span class="badge badge-primary">#heuristicsEvaluation
+                                                            </span>
+                                                            <span class="badge badge-primary">#UserTesting </span>
+                                                            <span class="badge badge-primary">#Recomandation </span>
+                                                        </p>
+                                                    </div>
+
+                                                    <div class="hover-content">
+                                                        <p class="card-title">Transforming Aadhaar PVC <br>Digital
+                                                            Experience
+                                                        </p>
+
+                                                        <p
+                                                            style=" text-align: left;font-size: 0.9rem;text-transform: none;line-height: 1.3rem;">
+                                                            Examining the user flows involved
+                                                            in ordering and checking the status of the Aadhaar PVC card
+                                                            with a focus on enhancing usability and user experience.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="SolapurTextile.html" style="text-decoration: none; color: inherit;">
+                                            <div class="card mb-4">
+                                                <img src="content/covers/solapurtextilecover1.png" class="card-img-top"
+                                                    alt="Project Image 2">
+                                                <div class="card-body">
+                                                    <div class="default-content">
+                                                        <p class="card-title">Solapur Textile (GI Tagged)
+                                                            <br>Interactive Website
+                                                        </p>
+
+                                                        <p class="card-text">
+
+                                                            <span class="badge badge-primary">#FigmaPrototype </span>
+                                                            <span class="badge badge-primary">#CulturalDoc </span>
+                                                            <span class="badge badge-primary">#GI-tagProduct </span>
+                                                            <span class="badge badge-primary">#Narration </span>
+
+                                                        </p>
+                                                    </div>
+                                                    <div class="hover-content">
+                                                        <p class="card-title">Solapur Textile (GI Tagged)
+                                                            <br>Interactive Website
+                                                        </p>
+                                                        <p
+                                                            style=" text-align: left;font-size: 0.9rem;text-transform: none;line-height: 1.3rem;">
+                                                            An creative effort to tell the hero story of India's
+                                                            GI-tagged product, Solapur Textile.
+                                                            After conducting thorough primary and secondary research, I
+                                                            explored Figma tool to design an interactive website
+                                                            for target audience.</p>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="arrow" id="arrow">
+                                <svg width="24" height="24" fill="#9c4cfd" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 22l-10-10h6V2h8v10h6z" />
+                                </svg>
+                            </div>
+                            <div style="height: 20px; margin: 20px 0;"></div>
+                            <div style="height: 1px; background-color: #9c4cfd;margin: 20px 0;"></div>
+                            <div class="container-fluid mt-4 project_container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h3 style="text-align: left; color: aliceblue;">Design Research</h3>
+                                        <p class="cat_description">
+                                            In this section, I highlight a project that involved extensive research,
+                                            combining insights from academic papers and interviews with a diverse range
+                                            of participants. This comprehensive approach allowed us to deeply understand
+                                            the subject matter.</p>
+                                    </div>
+
+
+
+                                    <div class="col-md-3">
+                                        <a href="SystemDesign.html" style="text-decoration: none; color: inherit;">
+                                            <div class="card mb-4">
+                                                <img src="content/covers/hoccover1.png" class="card-img-top"
+                                                    alt="Project Image 2">
+                                                <div class="card-body">
+                                                    <div class="default-content">
+                                                        <p class="card-title">House of Vulnerabilities</p>
+
+                                                        <p class="card-text">
+                                                            <span class="badge badge-primary">#AcademicResearch </span>
+                                                            <span class="badge badge-primary">#InfoViz </span>
+                                                            <span class="badge badge-primary">#Metaphor </span>
+                                                            <span class="badge badge-primary">#TeamWork </span>
+
+
+                                                        </p>
+                                                    </div>
+                                                    <div class="hover-content">
+                                                        <p class="card-title">House of Vulnerabilities</p>
+
+                                                        <p
+                                                            style=" text-align: left;font-size: 0.9rem;text-transform: none;line-height: 1.3rem;">
+                                                            This project aims to create a Gigamap that visually
+                                                            represents societal vulnerabilities and socio-economic
+                                                            challenges, fostering understanding, empathy, and dialogue
+                                                            on solutions for more resilient communities.
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+
+
+
+
+
+                                </div>
+                            </div>
+
                         </div>
 
 
@@ -1516,8 +1457,8 @@ a,
                     <section id="scrollskills">
                         <div class="padding-section-large padding_bottom-none">
                             <div class="skills_wrapper">
-                                <p class="caption-white" style="font-size: 24px;"><i class="fa fa-gamepad"></i> ( SKILLS ) <i
-                                        class="fa fa-gamepad"></i></p>
+                                <p class="caption-white" style="font-size: 24px;"><i class="fa fa-gamepad"></i> ( SKILLS
+                                    ) <i class="fa fa-gamepad"></i></p>
 
                                 <div class="spacer-65px">
 
@@ -1576,7 +1517,8 @@ a,
                     <div class="container-large footer">
                         <div class="padding-section-large footer">
                             <div class="subtitle_wrapper-white footer">
-                                <p id="w-node-edd0a6d7-f449-114b-0206-9d81edda348e-34dfd873" class="caption white _1" style="font-size: 24px;">
+                                <p id="w-node-edd0a6d7-f449-114b-0206-9d81edda348e-34dfd873" class="caption white _1"
+                                    style="font-size: 24px;">
                                     SAMRUDDHI BULBULE</p>
                                 <a href="#about" data-remodal-target="form" data-anim="btn"
                                     id="w-node-_483354fa-cc44-3ee1-f14a-bd1992deaba7-34dfd873"

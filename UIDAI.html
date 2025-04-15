@@ -49,13 +49,13 @@
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-      background: #af6dff;
+      background: #FF6A6A;
       /* border-radius: 10px; */
     }
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-      background: #8351c0;
+      background: #FF6A6A;
     }
 
 
@@ -141,14 +141,11 @@
     <div id="navbar">
 
 
-      <a href="index.html">
+      <a href="work.html">
         <div class="header">
-          <div class="name-logo" style="color: rgb(12, 12, 12);">
-
-            SAMRUDDHI BULBULE
-          </div>
+        
           <div class="logo">
-            <img src="logo_uidai.png" alt="Logo">
+            <img src="logo_shape.svg" alt="Logo">
           </div>
 
         </div>
@@ -174,7 +171,7 @@
 
 
       <div id="menu"
-        style="position: fixed; z-index: 999; transform: translateY(-50%); top: 30%;  right: 0; background-color: #8C24C5;">
+        style="position: fixed; z-index: 999; transform: translateY(-50%); top: 30%;  right: 0; background-color: #c63f3f;">
 
         <div>
           <div class="menu-option menu-option1" onclick="scrollToImage('prototype')">(Prototype)</div>
@@ -235,6 +232,9 @@
         <div class="col-md-12 gallery-item" style="padding-top: 20px; padding-bottom: 20px;">
           <img src="./content/UIDAI/label2.png" class="img-fluid" alt="Placeholder Image 1">
         </div>
+        <div class="col-md-12 gallery-item" style="padding-top: 20px; padding-bottom: 20px;">
+          <img src="./content/UIDAI/before.png" class="img-fluid" alt="Placeholder Image 1">
+        </div>
         <div class="col-md-12 gallery-item">
           <div data-autoplay="true" data-loop="true" data-wf-ignore="true"
             class="">
@@ -261,9 +261,11 @@
               allowfullscreen></iframe>
           </div>
         </div>
+
         <div class="col-md-12 gallery-item" style="padding-top: 20px; padding-bottom: 20px;">
-          <img src="./content/UIDAI/thanks.png" class="img-fluid" alt="Placeholder Image 1">
+          <img src="./content/UIDAI/13.png" class="img-fluid" alt="Placeholder Image 1">
         </div>
+       
 
        
 
@@ -294,6 +296,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </main>
+  <footer class="bg-dark" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 32px;">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      
+      <!-- Logo + Name -->
+      <div class="d-flex align-items-center gap-2">
+        <!-- Replace this SVG with yours -->
+        <a href="index.html"><img src="logo_shape.svg" alt="" style="width: 20%; height: 20%;"></a>
+        
+      </div>
+  
+      <!-- Optional: Social or other links -->
+      <div class="mt-3 mt-md-0">
+        <p style="font-size: 1em; color: #F4F5FF; font-weight: 300;"> &copy; 2025 Samruddhi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 <script>
   function scrollToImage(imageId) {

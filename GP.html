@@ -7,7 +7,7 @@
     <title>Graduation Project</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   
+
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -28,8 +28,8 @@
         }
 
         video {
-            max-width: 40%;
-            max-height: auto;
+            max-width: 100%;
+            max-height: 100%;
             /* overflow: hidden; */
         }
 
@@ -74,6 +74,27 @@
             display: block;
 
         }
+
+        .dropdown-content {
+            display: none;
+            padding-left: 10px;
+            border-left: 1px solid #555;
+            margin-top: 5px;
+        }
+
+        .sub-option {
+            font-size: 0.95rem;
+            color: #dcdcdc;
+        }
+
+        .sub-option:hover {
+            color: #FF6A6A;
+        }
+
+        .dropdown-open {
+            display: block;
+        }
+
 
         @media (max-width: 1024px) {
             #menu {
@@ -130,15 +151,18 @@
             transition: top 0.3s;
         }
 
-      
 
-.logo {
-    
-    height:32px; /* Match logo height */
-    width: auto; /* Match logo height */
-    display: flex;
-    align-items: center; /* Center the image vertically */
-}
+
+        .logo {
+
+            height: 32px;
+            /* Match logo height */
+            width: auto;
+            /* Match logo height */
+            display: flex;
+            align-items: center;
+            /* Center the image vertically */
+        }
     </style>
 </head>
 
@@ -149,150 +173,305 @@
 
         <div class="container-fluid" style="width: 90%;">
 
-            <div id="menu" style="position: fixed; z-index: 999; transform: translateY(-50%); top: 50%;  right: 0">
-      
-              <div>
-                <div class="menu-option" onclick="scrollToImage('Context')">(Context)</div>
-                <div class="menu-option" onclick="scrollToImage('Research')">(Research)</div>
-                <div class="menu-option" onclick="scrollToImage('Define')">(Scope)</div>
-                
-              </div>
-      
-      
-      
-            </div>
-            
+            <div id="menu" style="position: fixed; z-index: 999; transform: translateY(-50%); top: 50%; right: 0">
+                <div>
+                    <div class="menu-option" onclick="scrollToImage('Context')">(Context)</div>
+                    <div class="menu-option" onclick="scrollToImage('Research')">(Research)</div>
 
-        <div id="navbar">
-            <a href="work.html">
-                <div class="header">
-                   
-                    <div class="logo">
-                        <img src="logo_GP.png" alt="Logo">
+                    <div class="menu-option" onclick="scrollToImage('Define')">(Scope)</div>
+
+                    <!-- Execution Dropdown -->
+                    <div class="menu-option dropdown-toggle" onclick="toggleDropdown()">
+                        (Execution)
+                    </div>
+                    <div id="executionDropdown" class="dropdown-content">
+                        <div class="menu-option sub-option" onclick="scrollToImage('Gen')">Map Generation</div>
+                        <div class="menu-option sub-option" onclick="scrollToImage('Stitch')">Map Stitch</div>
+                        <div class="menu-option sub-option" onclick="scrollToImage('Clean')">Map Cleaning</div>
+                        <div class="menu-option sub-option" onclick="scrollToImage('Navigation')">Navigation Graph</div>
                     </div>
                 </div>
-            </a>
-        </div>
+            </div>
 
 
-        <div class="spacer"></div>
+            <div id="navbar">
+                <a href="work.html">
+                    <div class="header">
 
-        <div class="container-fluid">
+                        <div class="logo">
+                            <img src="logo_GP.png" alt="Logo">
+                        </div>
+                    </div>
+                </a>
+            </div>
 
 
+            <div class="spacer"></div>
 
-            <div class="row">
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/1.png" class="img-fluid" alt="Placeholder Image 1">
-                </div>
-                <div class="col-md-12 gallery-item" id="Context">
-                    <img src="./content/GP/context.png" class="img-fluid" alt="Placeholder Image 1" >
-                </div>
-                <div class="col-md-12 gallery-item" id="Context">
-                    <img src="./content/GP/2.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius: 16px 16px 0 0;">
-                </div>
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/3.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius: 0 0 16px 16px; margin-bottom: 80px;">
-                </div>
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/4.png" class="img-fluid" alt="Placeholder Image 1">
-                </div>
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/5.png" class="img-fluid" alt="Placeholder Image 1" >
-                </div>
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/6.png" class="img-fluid" alt="Placeholder Image 1">
-                </div>
-
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/7.png" class="img-fluid" alt="Placeholder Image 1">
-                </div>
-                <div class="col-md-12 gallery-item" id="Research">
-                    <img src="./content/GP/8.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius: 16px;"> 
-                </div>
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/comp.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius: 16px;" >
-                </div>
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/9.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius: 16px;" >
-                </div>
-                 <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/10.png" class="img-fluid" alt="Placeholder Image 1"  >
-                </div>
-                 <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/11.png" class="img-fluid" alt="Placeholder Image 1" >
-                </div>
-                 <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/12.png" class="img-fluid" alt="Placeholder Image 1" >
-                </div>
-                 <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/13.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
-                </div>
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/Primary.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius: 16px 16px 0 0;">
-                </div>
-                 <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/14.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius: 16px 16px 0 0;">
-                </div>
-                
-                 <div class="col-md-12 gallery-item" >
-                    <img src="./content/GP/15.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius: 16px;">
-                </div>
-                 <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/16.png" class="img-fluid" alt="Placeholder Image 1" >
-                </div>
-                 <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/17.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius: 16px;" >
-                </div>
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/18.png" class="img-fluid" alt="Placeholder Image 1" >
-                </div>
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/19.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
-                </div>
-
-                <div class="col-md-12 gallery-item" id="Define">
-                    <img src="./content/GP/define.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
-                </div>
-                
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/20.png" class="img-fluid" alt="Placeholder Image 1">
-                </div>
-                 
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/21.png" class="img-fluid" alt="Placeholder Image 1" >
-                </div>
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/22.png" class="img-fluid" alt="Placeholder Image 1">
-                </div>
-
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/23.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
-                </div>
+            <div class="container-fluid">
 
 
 
+                <div class="row">
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/1.png" class="img-fluid" alt="Placeholder Image 1">
+                    </div>
+                    <div class="col-md-12 gallery-item" id="Context">
+                        <img src="./content/GP/context.png" class="img-fluid" alt="Placeholder Image 1">
+                    </div>
+                    <div class="col-md-12 gallery-item" id="Context">
+                        <img src="./content/GP/2.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius: 16px 16px 0 0;">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/3.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius: 0 0 16px 16px; margin-bottom: 80px;">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/4.png" class="img-fluid" alt="Placeholder Image 1">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/5.png" class="img-fluid" alt="Placeholder Image 1">
+                    </div>
+                   
+
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/7.png" class="img-fluid" alt="Placeholder Image 1">
+                    </div>
+                    <div class="col-md-12 gallery-item" id="Research">
+                        <img src="./content/GP/8.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius: 16px;">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/comp.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius: 16px;">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/9.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius: 16px;">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/10.png" class="img-fluid" alt="Placeholder Image 1">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/11.png" class="img-fluid" alt="Placeholder Image 1">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/12.png" class="img-fluid" alt="Placeholder Image 1">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/13.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/Primary.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius: 16px 16px 0 0;">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/14.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius: 16px 16px 0 0;">
+                    </div>
+
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/15.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius: 16px;">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/16.png" class="img-fluid" alt="Placeholder Image 1">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/17.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius: 16px;">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/18.png" class="img-fluid" alt="Placeholder Image 1">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/19.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                    </div>
+
+                    <div class="col-md-12 gallery-item" id="Define">
+                        <img src="./content/GP/define.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                    </div>
+
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/20.png" class="img-fluid" alt="Placeholder Image 1">
+                    </div>
+
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/21.png" class="img-fluid" alt="Placeholder Image 1">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/22.png" class="img-fluid" alt="Placeholder Image 1">
+                    </div>
+
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/23.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                    </div>
+                    <div class="col-md-12 gallery-item">
+                        <img src="./content/GP/Execution.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                    </div>
+
+                    <div class="col-md-12 gallery-item" id="Gen">
+                        <img src="./content/GP/Map Generation.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                    </div>
+
+                </div>
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/GP/24.png" class="img-fluid" alt="Placeholder Image 1"
+                        style="border-radius: 16px 16px 0 0;">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="">
+                        <video autoplay="true" loop="" muted="" playsinline="" data-wf-ignore="true" playbackRate="2">
+                            <source src="./content/GP/Map Record.mp4" data-wf-ignore="true" />
+
+                        </video>
+                    </div>
 
 
+                </div>
 
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/GP/25.png" class="img-fluid" alt="Placeholder Image 1"
+                        style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                </div>
+
+                <div class="col-md-12 gallery-item" id="Stitch">
+                    <img src="./content/GP/Map Stitch.png" class="img-fluid" alt="Placeholder Image 1"
+                        style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                </div>
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/GP/26.png" class="img-fluid" alt="Placeholder Image 1"
+                        style="border-radius:  16px 16px 0 0 ;">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="">
+                        <video autoplay="true" loop="" muted="" playsinline="" data-wf-ignore="true" playbackRate="2">
+                            <source src="./content/GP/Map Adjust Record.mp4" data-wf-ignore="true" />
+
+                        </video>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/GP/27.png" class="img-fluid" alt="Placeholder Image 1"
+                        style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                </div>
+
+
+                <div class="col-md-12 gallery-item" id="Clean">
+                    <img src="./content/GP/Map Cleaning.png" class="img-fluid" alt="Placeholder Image 1"
+                        style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                </div>
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/GP/28.png" class="img-fluid" alt="Placeholder Image 1"
+                        style="border-radius:  16px 16px 0 0 ;">
+                </div>
+
+                <div class="col-md-12 gallery-item">
+                    <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="">
+                        <video autoplay="true" loop="" muted="" playsinline="" data-wf-ignore="true" playbackRate="2">
+                            <source src="./content/GP/Map Clean.mp4" data-wf-ignore="true" />
+
+                        </video>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/GP/29.png" class="img-fluid" alt="Placeholder Image 1"
+                        style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                </div>
+
+                <div class="col-md-12 gallery-item" id="Navigation">
+                    <img src="./content/GP/Navigation Graph.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/GP/30.png" class="img-fluid" alt="Placeholder Image 1" style=>
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="">
+                        <video autoplay="true" loop="" muted="" playsinline="" data-wf-ignore="true" playbackRate="2">
+                            <source src="./content/GP/Map Node.mp4" data-wf-ignore="true" />
+
+                        </video>
+                    </div>
+
+
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/GP/31.png" class="img-fluid" alt="Placeholder Image 1" style=>
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="">
+                        <video autoplay="true" loop="" muted="" playsinline="" data-wf-ignore="true" playbackRate="2">
+                            <source src="./content/GP/Map POI1.mp4" data-wf-ignore="true" />
+
+                        </video>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/GP/32.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+
+                <div class="col-md-12 gallery-item">
+                    <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="">
+                        <video autoplay="true" loop="" muted="" playsinline="" data-wf-ignore="true" playbackRate="2">
+                            <source src="./content/GP/Map Path.mp4" data-wf-ignore="true" />
+
+                        </video>
+                    </div>
+
+
+                </div>
+
+             
+                <div class="col-md-12 gallery-item" style="margin-top: 80px; border-radius: 16px;">
+                    <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="">
+                        <video autoplay="true" loop="" muted="" playsinline="" data-wf-ignore="true" playbackRate="2">
+                            <source src="./content/GP/Tooltip Interaction.mp4" data-wf-ignore="true" />
+
+                        </video>
+                    </div>
+
+
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/GP/33.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius: 0 0 16px 16px;">
+                </div>
 
 
 
             </div>
 
             <div class="row">
-               
-        
-                <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/last.png" class="img-fluid" alt="Placeholder Image 1" >
-                </div>
-               
-        
-        
-              </div>
 
-             
-              
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/GP/last.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+
+
+
+            </div>
+
+
+
 
 
 
@@ -306,22 +485,28 @@
     </main>
     <footer class="bg-dark" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 32px;">
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-          
-          <!-- Logo + Name -->
-          <div class="d-flex align-items-center gap-2">
-            <!-- Replace this SVG with yours -->
-            <a href="index.html"><img src="logo_shape.svg" alt="" style="width: 20%; height: 20%;"></a>
-            
-          </div>
-      
-          <!-- Optional: Social or other links -->
-          <div class="mt-3 mt-md-0">
-            <p style="font-size: 1em; color: #F4F5FF; font-weight: 300;"> &copy; 2025 Samruddhi. All rights reserved.</p>
-          </div>
+
+            <!-- Logo + Name -->
+            <div class="d-flex align-items-center gap-2">
+                <!-- Replace this SVG with yours -->
+                <a href="index.html"><img src="logo_shape.svg" alt="" style="width: 20%; height: 20%;"></a>
+
+            </div>
+
+            <!-- Optional: Social or other links -->
+            <div class="mt-3 mt-md-0">
+                <p style="font-size: 1em; color: #F4F5FF; font-weight: 300;"> &copy; 2025 Samruddhi. All rights
+                    reserved.</p>
+            </div>
         </div>
-      </footer>
+    </footer>
 </body>
 <script>
+
+    function toggleDropdown() {
+        const dropdown = document.getElementById("executionDropdown");
+        dropdown.classList.toggle("dropdown-open");
+    }
     function scrollToImage(imageId) {
         var image = document.getElementById(imageId);
         if (image) {

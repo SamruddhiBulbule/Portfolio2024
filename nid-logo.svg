@@ -1,11 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="749px" height="656px" viewBox="0 0 749 656" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Logo - National Institute of Design</title>
-    <desc>Created by Adrian Frutiger.</desc>
-    <defs></defs>
-    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle id="Oval" fill="#000000" cx="399.5" cy="118.5" r="70.5"></circle>
-        <polygon id="Path-2" fill="#000000" points="35.404819 203 350 203 350 609.458968"></polygon>
-        <path d="M452,609.458968 L452,203 L506.924966,203 C609.966408,203 698.107246,279.579226 698.107246,406.818555 C698.107246,536.414168 609.103516,609.458968 506.924966,609.458968 L452,609.458968 Z" id="D" fill="#000000"></path>
-    </g>
+<svg width="129" height="102" viewBox="0 0 129 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_113_642)">
+<g clip-path="url(#clip1_113_642)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 28.0879H61.1482V101.899L0 28.0879Z" fill="#383838"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M80.5811 28.0645H94.4526C108.077 28.0645 128.809 39.9869 128.809 64.3859C128.809 89.8592 108.077 100.447 94.4526 100.447H80.5811V28.0645Z" fill="#383838"/>
+<path d="M70.9424 25.6432C78.1199 25.6432 83.9384 19.9028 83.9384 12.8216C83.9384 5.74044 78.1199 0 70.9424 0C63.7648 0 57.9463 5.74044 57.9463 12.8216C57.9463 19.9028 63.7648 25.6432 70.9424 25.6432Z" fill="#383838"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_113_642">
+<rect width="129" height="101.899" fill="white"/>
+</clipPath>
+<clipPath id="clip1_113_642">
+<rect width="129" height="101.899" fill="white"/>
+</clipPath>
+</defs>
 </svg>

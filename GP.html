@@ -28,13 +28,13 @@
         }
 
         video {
-           width: 100vw;
-  max-height: 100%;
-  display: block;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
+            width: 99.5vw;
+            max-height: 100%;
+            display: block;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
         }
 
         .al_c {
@@ -98,6 +98,43 @@
         .dropdown-open {
             display: block;
         }
+
+        .video-scroll-hint {
+            
+            height: 24px;
+            /* you can tweak height */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            /* Vertically center content */
+            justify-content: center;
+            /* Horizontally center content if needed */
+            margin: 20px 0;
+            background: transparent;
+            /* or a soft color */
+        }
+
+
+        .scrolling-track {
+            display: inline-block;
+         
+            animation: scroll-left 15s linear infinite;
+            font-size: 20px;
+            color: #007bff;
+            will-change: transform;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+
 
 
         @media (max-width: 1024px) {
@@ -237,20 +274,19 @@
                     <div class="col-md-12 gallery-item">
                         <img src="./content/GP/5.png" class="img-fluid" alt="Placeholder Image 1">
                     </div>
-                   
+
 
                     <div class="col-md-12 gallery-item">
                         <img src="./content/GP/7.png" class="img-fluid" alt="Placeholder Image 1">
                     </div>
                     <div class="col-md-12 gallery-item" id="Research">
                         <img src="./content/GP/8.png" class="img-fluid" alt="Placeholder Image 1"
-                            style="border-radius: 16px;">
+                            style="border-radius: 16px; margin-bottom: 80px;"">
                     </div>
-                    <div class="col-md-12 gallery-item">
-                        <img src="./content/GP/comp.png" class="img-fluid" alt="Placeholder Image 1"
-                            style="border-radius: 16px;">
+                    <div class=" col-md-12 gallery-item">
+                        <img src="./content/GP/comp.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius: 16px; >
                     </div>
-                    <div class="col-md-12 gallery-item">
+                    <div class=" col-md-12 gallery-item">
                         <img src="./content/GP/9.png" class="img-fluid" alt="Placeholder Image 1"
                             style="border-radius: 16px;">
                     </div>
@@ -277,15 +313,13 @@
                     </div>
 
                     <div class="col-md-12 gallery-item">
-                        <img src="./content/GP/15.png" class="img-fluid" alt="Placeholder Image 1"
-                            style="border-radius: 16px;">
+                        <img src="./content/GP/15.png" class="img-fluid" alt="Placeholder Image 1">
                     </div>
                     <div class="col-md-12 gallery-item">
                         <img src="./content/GP/16.png" class="img-fluid" alt="Placeholder Image 1">
                     </div>
                     <div class="col-md-12 gallery-item">
-                        <img src="./content/GP/17.png" class="img-fluid" alt="Placeholder Image 1"
-                            style="border-radius: 16px;">
+                        <img src="./content/GP/17.png" class="img-fluid" alt="Placeholder Image 1">
                     </div>
                     <div class="col-md-12 gallery-item">
                         <img src="./content/GP/18.png" class="img-fluid" alt="Placeholder Image 1">
@@ -297,7 +331,7 @@
 
                     <div class="col-md-12 gallery-item" id="Define">
                         <img src="./content/GP/define.png" class="img-fluid" alt="Placeholder Image 1"
-                            style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                            style="border-radius:  0 0 16px 16px; ">
                     </div>
 
                     <div class="col-md-12 gallery-item">
@@ -322,17 +356,31 @@
 
                     <div class="col-md-12 gallery-item" id="Gen">
                         <img src="./content/GP/Map Generation.png" class="img-fluid" alt="Placeholder Image 1"
-                            style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                            style="border-radius:  0 0 16px 16px;">
                     </div>
 
                 </div>
 
                 <div class="col-md-12 gallery-item">
                     <img src="./content/GP/24.png" class="img-fluid" alt="Placeholder Image 1"
-                        style="border-radius: 16px 16px 0 0;">
+                        style="border-radius: 16px;">
                 </div>
+                <div class="video-scroll-hint">
+                    <div class="scrolling-track">
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+
+                    </div>
+                </div>
+
+
+
+
                 <div class="col-md-12 gallery-item">
+
                     <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="">
+
                         <video autoplay="true" loop="" muted="" playsinline="" data-wf-ignore="true" playbackRate="2">
                             <source src="./content/GP/Map Record.mp4" data-wf-ignore="true" />
 
@@ -341,20 +389,28 @@
 
 
                 </div>
-
+          
                 <div class="col-md-12 gallery-item">
                     <img src="./content/GP/25.png" class="img-fluid" alt="Placeholder Image 1"
-                        style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                        style="border-radius:  16px ; margin-bottom: 80px; margin-top: 80px;">
                 </div>
 
                 <div class="col-md-12 gallery-item" id="Stitch">
                     <img src="./content/GP/Map Stitch.png" class="img-fluid" alt="Placeholder Image 1"
-                        style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                        style="border-radius:  0 0 16px 16px;">
                 </div>
 
                 <div class="col-md-12 gallery-item">
                     <img src="./content/GP/26.png" class="img-fluid" alt="Placeholder Image 1"
-                        style="border-radius:  16px 16px 0 0 ;">
+                        style="border-radius:  16px;">
+                </div>
+                <div class="video-scroll-hint">
+                    <div class="scrolling-track">
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+
+                    </div>
                 </div>
                 <div class="col-md-12 gallery-item">
                     <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="">
@@ -366,23 +422,30 @@
 
 
                 </div>
-
+              
                 <div class="col-md-12 gallery-item">
                     <img src="./content/GP/27.png" class="img-fluid" alt="Placeholder Image 1"
-                        style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                        style="border-radius: 16px; margin-bottom: 80px; margin-top: 80px;">
                 </div>
 
 
                 <div class="col-md-12 gallery-item" id="Clean">
                     <img src="./content/GP/Map Cleaning.png" class="img-fluid" alt="Placeholder Image 1"
-                        style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                        style="border-radius:  0 0 16px 16px;">
                 </div>
 
                 <div class="col-md-12 gallery-item">
                     <img src="./content/GP/28.png" class="img-fluid" alt="Placeholder Image 1"
-                        style="border-radius:  16px 16px 0 0 ;">
+                        style="border-radius:  16px;">
                 </div>
+                <div class="video-scroll-hint">
+                    <div class="scrolling-track">
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
 
+                    </div>
+                </div>
                 <div class="col-md-12 gallery-item">
                     <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="">
                         <video autoplay="true" loop="" muted="" playsinline="" data-wf-ignore="true" playbackRate="2">
@@ -393,17 +456,25 @@
 
 
                 </div>
-
+                
                 <div class="col-md-12 gallery-item">
                     <img src="./content/GP/29.png" class="img-fluid" alt="Placeholder Image 1"
-                        style="border-radius:  0 0 16px 16px; margin-bottom: 80px;">
+                        style="border-radius:  16px; margin-bottom: 80px; margin-top: 80px;">
                 </div>
 
                 <div class="col-md-12 gallery-item" id="Navigation">
                     <img src="./content/GP/Navigation Graph.png" class="img-fluid" alt="Placeholder Image 1">
                 </div>
                 <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/30.png" class="img-fluid" alt="Placeholder Image 1" style=>
+                    <img src="./content/GP/30.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius: 16px;">
+                </div>
+                <div class="video-scroll-hint">
+                    <div class="scrolling-track">
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+
+                    </div>
                 </div>
                 <div class="col-md-12 gallery-item">
                     <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="">
@@ -415,8 +486,17 @@
 
 
                 </div>
+              
                 <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/31.png" class="img-fluid" alt="Placeholder Image 1" style=>
+                    <img src="./content/GP/31.png" class="img-fluid" alt="Placeholder Image 1" >
+                </div>
+                <div class="video-scroll-hint">
+                    <div class="scrolling-track">
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+
+                    </div>
                 </div>
                 <div class="col-md-12 gallery-item">
                     <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="">
@@ -428,11 +508,18 @@
 
 
                 </div>
-
+            
                 <div class="col-md-12 gallery-item">
                     <img src="./content/GP/32.png" class="img-fluid" alt="Placeholder Image 1">
                 </div>
+                <div class="video-scroll-hint">
+                    <div class="scrolling-track">
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
+                        <span>🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;🎥&nbsp;&nbsp;</span>
 
+                    </div>
+                </div>
                 <div class="col-md-12 gallery-item">
                     <div data-autoplay="true" data-loop="true" data-wf-ignore="true" class="">
                         <video autoplay="true" loop="" muted="" playsinline="" data-wf-ignore="true" playbackRate="2">
@@ -456,7 +543,8 @@
 
                 </div>
                 <div class="col-md-12 gallery-item">
-                    <img src="./content/GP/33.png" class="img-fluid" alt="Placeholder Image 1" style="border-radius: 0 0 16px 16px;">
+                    <img src="./content/GP/33.png" class="img-fluid" alt="Placeholder Image 1"
+                        style="border-radius: 16px; margin-top: 80px;">
                 </div>
 
 

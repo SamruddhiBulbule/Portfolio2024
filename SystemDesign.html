@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Thinking</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["Antonio:100,200,300,regular,500,600,700"]
+            }
+        });
+
+
+    </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            /* overflow: hidden; */
+        }
+
+        .al_c {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+            background-color: rgb(12, 12, 12);
+        }
+
+
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #af6dff;
+            /* border-radius: 10px; */
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8351c0;
+        }
+
+
+        .gallery-item {
+            margin-bottom: 0px;
+        }
+
+        #menu {
+            background-color: rgb(12, 12, 12);
+            padding: 20px;
+            padding-right: 10px;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+            min-width: 100px;
+            display: block;
+
+        }
+
+        @media (max-width: 1024px) {
+            #menu {
+                display: none;
+                /* Hide the menu on screens smaller than a laptop */
+            }
+        }
+
+        .menu-option {
+            padding-bottom: 8px;
+            color: aliceblue;
+
+        }
+
+        .menu-option:hover {
+            color: #af6dff;
+            cursor: pointer;
+        }
+
+        .menu-option1:hover {
+            color: #dedede;
+            cursor: pointer;
+
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            /* position: fixed; */
+        }
+
+        #navbar {
+            background-color: #fbfbfb;
+
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: block;
+            transition: top 0.3s;
+            z-index: 9999;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(251, 251, 251, 0.8);
+            /* Use rgba to set the background color with opacity */
+            backdrop-filter: blur(10px);
+            /* Apply blur effect */
+            padding: 10px;
+
+            z-index: 1000;
+            transition: top 0.3s;
+        }
+
+
+        .accordian_col {
+            display: flex;
+            /* Enable flexbox on the parent column */
+            align-items: center;
+            /* Align content vertically within the column */
+            justify-content: left;
+        }
+
+        .accordian_framework {
+            display: flex;
+
+
+        }
+
+        .accordian_framework div {
+            line-height: 150%;
+            font-family: 'DM Sans', sans-serif;
+           
+        }
+
+        .accordian_framework .accordion-header {
+            /* Target the accordion header specifically */
+            font-size: 24px;
+            /* Set the desired font size */
+            line-height: 1.5;
+            /* Adjust line height for better spacing (optional) */
+            display: flex;
+            /* Enable flexbox for alignment */
+            align-items: center;
+            /* Align content vertically within the header */
+        }
+
+        .accordian_framework .accordion-button {
+            /* Inherit styles from the previous rule (optional) */
+            background-color: skyblue;
+            color: #284caf;
+            font-family: 'DM Sans', sans-serif;
+            text-align: left;
+            /* Explicitly set text alignment to left */
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-radius: 4px;
+
+
+        }
+        @media only screen and (max-width: 768px) {
+
+            .accordian_framework{
+                padding-top: 24px;
+            }
+
+            .accordian_framework .accordion-button {
+               font-size: 18px;
+                
+
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .accordian_framework .accordion-button {
+                width: 400px;
+                
+
+            }
+
+            .accordian_framework i {
+                margin-left: auto;
+            }
+
+            .accordian_framework .alert
+            {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color:#14171D;">
+
+    <main id="smooth-content" class="main-wrapper">
+
+
+        <div id="navbar">
+
+
+            <a href="index.html">
+                <div class="header">
+                    <div class="name-logo" style="color: rgb(12, 12, 12);">
+
+                        SAMRUDDHI BULBULE
+                    </div>
+                    <div class="logo">
+                        <img src="logo_hoc.png" alt="Logo">
+                    </div>
+
+                </div>
+            </a>
+
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="container-fluid" style="width: 88%;">
+
+            <div id="menu" style="position: fixed; z-index: 999; transform: translateY(-50%); top: 50%;  right: 0">
+
+                <div>
+                    <div class="menu-option" onclick="scrollToImage('context')">(Context)</div>
+                    <div class="menu-option" onclick="scrollToImage('secondary')">(Secondary)</div>
+                    <div class="menu-option" onclick="scrollToImage('primary')">(Primary)</div>
+                    <div class="menu-option" onclick="scrollToImage('synthesis')">(Synthesis)</div>
+                    <div class="menu-option" onclick="scrollToImage('visualize')">(Visualize)</div>
+                    <div class="menu-option" onclick="scrollToImage('framework')">(framework)</div>
+                </div>
+
+            </div>
+            <div id="menu"
+                style="position: fixed; z-index: 999; transform: translateY(-50%); top: 30%;  right: 0; background-color: #8C24C5;">
+
+                <div>
+                    <div class="menu-option menu-option1" onclick="scrollToImage('giga')">(Giga map)</div>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/1.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+
+<!--                 <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/Final GIGA MAP for Potfolio.png" class="img-fluid" alt="giga map" id="giga">
+                </div> -->
+
+
+                <div class="col-md-12 gallery-item">
+                    <div class="iframe-container">
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fp2wCuXf1hOtyi5PPFmMV1e%2FDP3-links-for-portfolio%3Ftype%3Ddesign%26node-id%3D3%253A2010%26mode%3Ddesign%26t%3D1KQIStKuyCXUVSHT-1"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/2.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/3.png" class="img-fluid" alt="Placeholder Image 1" id="context">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/4.png" class="img-fluid" alt="Placeholder Image 1" id="secondary">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/5.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/6.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/7.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/8.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+
+
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/9.png" class="img-fluid" alt="Placeholder Image 1" id="primary">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/10.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+
+
+
+                <style>
+                    .button1 {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        padding: 20px 30px;
+                        /* Increased padding for label */
+                        background-color: #284caf;
+                        color: #f0f0f0;
+                        border: none;
+                        border-radius: 24px;
+                        text-decoration: none;
+                        z-index: 1;
+                        font-size: 28px;
+
+                        /* Apply shadow effect */
+                        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+                    }
+
+
+                    .button1:hover {
+                        background-color: #676767;
+                    }
+
+                    @media (min-width: 769px) {
+                        .button1 {
+                            font-size: 32px;
+
+                        }
+
+                        .gallery-item {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+
+                    @media (max-width: 769px) {
+                        .button1 {
+                            font-size: 14px;
+                            background-color: #9aa4fe;
+                        }
+
+                        .gallery-item {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                </style>
+                <div class="col-md-12 gallery-item" style="padding-top: 50px; padding-bottom: 50px; ">
+                    <div class="image-container" style="position: relative;">
+                        <img src="./content/dp3/Link to Causal loop.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius: 24px;filter: blur(2px) grayscale(90%) brightness(0.7);">
+                        <button onclick="window.open('https://kumu.io/shinidesign/vulnerability-causal');"
+                            class="button1">Causal Loop</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/11.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/12.png" class="img-fluid" alt="Placeholder Image 1">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/13.png" class="img-fluid" alt="Placeholder Image 1" id="synthesis">
+                </div>
+
+
+
+                <div class="col-md-12 gallery-item" style="padding-top: 50px; padding-bottom: px;">
+                    <div class="image-container" style="position: relative;">
+                        <img src="./content/dp3/Link to Sythesis map.png" class="img-fluid" alt="Placeholder Image 1"
+                            style="border-radius: 24px;filter: blur(3.5px) grayscale(90%) brightness(0.7);">
+                        <button
+                            onclick="window.open('https://www.figma.com/file/p2wCuXf1hOtyi5PPFmMV1e/Synthesis-Map-DP3?type=design&node-id=0%3A1&mode=design&t=1KQIStKuyCXUVSHT-1');"
+                            class="button1">Synthesis Map</a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/14.png" class="img-fluid" alt="Placeholder Image 1" id="">
+                </div>
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/15.png" class="img-fluid" alt="Placeholder Image 1" id="visualize">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/16.png" class="img-fluid" alt="Placeholder Image 1" id="">
+                </div>
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/17.png" class="img-fluid" alt="Placeholder Image 1" id="">
+                </div>
+                <div class="col-md-12 gallery-item" id="framework">
+                    <img src="./content/dp3/framework intro.png" class="img-fluid" alt="Placeholder Image 1" id="">
+                </div>
+                
+
+
+                <div class="col-md-12"  style="padding-top: 72px; padding-bottom: 72px;">
+                    <div class="row">
+                       
+
+
+                        <div class="col-md-6">
+                            <img src="./content/dp3/framework.png" alt="Placeholder Image 1" class="img-fluid">
+
+                        </div>
+                        <div class="col-md-6 accordian_col">
+                            
+
+                            <div class="accordian_framework">
+                                
+
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="alert alert-info" role="alert">
+                                        Please click on buttons to see the steps.
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                1. Define the System
+
+                                                <i class="fa fa-caret-down" style="font-size: 28px;"></i>
+
+                                            </button>
+                                        </h2>
+
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Identify the specific social-economical system you're analyzing.
+                                                This
+                                                could be a local community, an agricultural region affected by a new
+                                                irrigation policy, or even a national population facing a healthcare
+                                                reform.
+
+                                                Consider the boundaries: Define the geographical area and the types
+                                                of
+                                                individuals or groups included in your system.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                2. Gather Data
+                                                <i class="fa fa-caret-down" style="font-size: 28px;"></i>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Focus on the seven key components: </br>
+                                                <strong>Socio-cultural: </strong> Collect data on demographics,
+                                                income
+                                                levels, education,
+                                                social safety nets, and cultural norms. </br>
+                                                <strong>Economic: </strong> Analyse economic structure, employment
+                                                opportunities, access
+                                                to resources, and dependence on specific sectors. </br>
+                                                <strong>Political: </strong> Investigate governance, policy
+                                                frameworks,
+                                                and the capacity
+                                                of institutions to manage change.
+                                                Assess existing infrastructure, access to technology, and
+                                                communication networks. </br>
+                                                <strong>Environmental</strong> Analyse the natural resources,
+                                                biodiversity, and
+                                                environmental risks within the system.
+                                                Physical: Identify potential threats like natural disasters,
+                                                pollution,
+                                                or economic shocks. </br>
+                                                <strong>Economical</strong> Identifying factors affecting learning
+                                                outcomes, limiting
+                                                their educational opportunities, or preventing them from achieving
+                                                their
+                                                full potential.
+                                                Utilise various methods: Use surveys, interviews, government data,
+                                                scientific reports, and existing vulnerability assessments.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                3. Analyse Interactions:
+
+                                                <i class="fa fa-caret-down" style="font-size: 28px;"></i>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Identify how the components influence each other: Look for
+                                                connections
+                                                between factors. For example, high poverty (social factor) might
+                                                increase sensitivity to discrimination, physical and environmental
+                                                vulnerabilities.
+                                                Analyse potential feedback loops: Consider how the implemented
+                                                solution/policy might interact with existing vulnerabilities,
+                                                potentially leading to cascading effects.
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                                4. Identify Stakeholders
+
+
+                                                <i class="fa fa-caret-down" style="font-size: 28px;"></i>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Involve stakeholders throughout the process: This could include
+                                                community leaders, policymakers, experts, and potentially
+                                                individuals
+                                                directly affected by the proposed solution/policy.
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                aria-expanded="false" aria-controls="collapseFive">
+                                                5. Develop Strategies:
+
+
+
+                                                <i class="fa fa-caret-down" style="font-size: 28px;"></i>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Use the framework's insights to develop strategies for reducing
+                                                vulnerability to increase resilience and transformation by enhancing
+                                                adaptive capacity. This could involve skills training, livelihood
+                                                diversification programs, or fostering innovation.
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/framework legend.png" class="img-fluid" alt="Placeholder Image 1" id="">
+                </div>
+
+                <div class="col-md-12 gallery-item">
+                    <img src="./content/dp3/19.png" class="img-fluid" alt="Placeholder Image 1" id="">
+                </div>
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Add more gallery items here -->
+            </div>
+        </div>
+
+
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </main>
+</body>
+<script>
+    function scrollToImage(imageId) {
+        var image = document.getElementById(imageId);
+        if (image) {
+            image.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
+<style>
+    /* Styles for the iframe container */
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%;
+        /* 16:9 aspect ratio */
+    }
+
+    /* Style for the iframe */
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Media query for screens smaller than a laptop */
+    @media (max-width: 1024px) {
+        .iframe-container {
+            padding-top: 100%;
+            margin-bottom: 20px;
+            height: 160px;
+        }
+    }
+</style>
+
+</html>

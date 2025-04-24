@@ -36,6 +36,24 @@
     <script async src="newjs.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        .frame-16 svg {
+    transition: transform 0.3s ease;
+}
+
+.link-block-2:hover .frame-16 svg {
+    transform: translateX(4px);
+    color: #F5F0ED;
+    
+}
+.link-block-2:hover .frame-16 {
+    background-color: #447efb;
+    transition: background-color 0.3s ease;
+}
+.link-block-2:hover .pill-category {
+    background-color: #ffc7be;
+ 
+}
+
         .load_grid {
             display: grid;
         }
@@ -183,6 +201,23 @@
                 text-align: center;
                 transform-origin: 0 0;
             }
+            ::-webkit-scrollbar {
+            width: 10px;
+            background-color: rgb(12, 12, 12);
+        }
+
+
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #FF6A6A;
+            /* border-radius: 10px; */
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FF6A6A;
+        }
         </style>
         <style>
             .social-icons-desktop {
@@ -210,6 +245,7 @@
             .social-icons-mobile a {
               text-decoration: none;
             }
+            
           </style>
     </div>
     <div class="load_grid">
@@ -362,8 +398,8 @@
                     <h1 class="heading-50">Work</h1>
                     <p class="h2-subheader" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Each project here reflects a unique journey — some led to bold insights, others to quiet refinements. All of them shaped by persistence & exploration.</p>
                     <div class="filter-block">
-                        <p class="paragraph-27" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.2em;">Filter</p>
-                        <div class="form-block w-form" >
+                        <p class="paragraph-27" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 1.2em;">Filter (Total 8)</p>
+            <div class="form-block w-form" >
                             <form id="email-form" name="email-form" data-name="Email Form" method="get"
                                 fs-cmsfilter-element="filters" class="form" data-wf-page-id="66d45fac850208e96de16df6"
                                 data-wf-element-id="7117091f-7427-314d-13fe-524d97fb196a">
@@ -373,13 +409,20 @@
                                         style="opacity:0;position:absolute;z-index:-1" />
                                     <span fs-cmsfilter-field="category" class="checkbox-label w-form-label"
                                         for="Checkbox" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight:500 ; ">Industry Project</span>
-                                </label>
+                                </label> 
                                 <label class="w-checkbox checkbox-field-custom last">
                                     <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div>
                                     <input type="checkbox" name="Checkbox-3" id="Checkbox-3" data-name="Checkbox 3"
                                         style="opacity:0;position:absolute;z-index:-1" />
                                     <span fs-cmsfilter-field="category" class="checkbox-label w-form-label"
                                         for="Checkbox-3" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight:500 ; ">Case Study</span>
+                                </label>
+                                <label class="w-checkbox checkbox-field-custom last">
+                                    <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div>
+                                    <input type="checkbox" name="Checkbox-3" id="Checkbox-3" data-name="Checkbox 3"
+                                        style="opacity:0;position:absolute;z-index:-1" />
+                                    <span fs-cmsfilter-field="category" class="checkbox-label w-form-label"
+                                        for="Checkbox-3" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight:500 ; ">Quick Task</span>
                                 </label>
                                 <label class="w-checkbox checkbox-field-custom last">
                                     <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div>
@@ -449,7 +492,7 @@
                                         <div class="pill-category"
                                             style="padding-top: 8px;padding-bottom: 8px;padding-left: 12px;padding-right: 12px; ">
                                             <div fs-cmsfilter-field="category" class="text-2"><span
-                                                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 1.1em; font-weight: 500;">Case Study</span></div>
+                                                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 1.1em; font-weight: 500;">Indoor Cartography</span></div>
                                         </div>
                                         <div class="pill-category"
                                             style="padding-top: 8px;padding-bottom: 8px;padding-left: 12px;padding-right: 12px; ">
@@ -580,6 +623,57 @@
                                                     style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 1.1em; font-weight: 500;">Design
                                                     Recomandation</span></div>
                                         </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div role="listitem" class="collection-item-2 w-dyn-item">
+                        <div class="cms-image-work">
+                            <img src="content/covers/Contitaskcover2.png" loading="lazy" alt="Concordium"
+                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 37vw" class="image-11" />
+                        </div>
+                        <a href="ContiTask.html" class="link-block-2 w-inline-block">
+                            <div class="cms-work-content">
+                                <div class="div-block-49">
+                                    <div class="frame-16 flipped">
+                                        <div class="blue-arrow w-embed">
+                                            <svg width="20" height="19" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.642334 8.56581C0.642334 8.38102 0.734729 8.28862 0.91952 8.28862L13.2859 8.28862C14.1753 8.28862 14.6221 7.21455 13.9951 6.5837L9.29449 1.85395C9.1625 1.72196 9.1625 1.58996 9.29449 1.45797L10.3636 0.428425C10.4956 0.296431 10.621 0.289831 10.7398 0.408625L19.2534 9.15978C19.3854 9.29177 19.392 9.41717 19.2732 9.53596L10.7596 18.2871C10.6276 18.4191 10.4956 18.4191 10.3636 18.2871L9.29449 17.2576C9.1625 17.1256 9.1625 16.9936 9.29449 16.8616L13.9848 12.1131C14.6092 11.4809 14.1605 10.4091 13.272 10.4103L0.91952 10.4269C0.73473 10.4269 0.642334 10.3345 0.642334 10.1497L0.642334 8.56581Z"
+                                                    fill="currentColor" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="div-block-50">
+                                        <h2 class="heading-49"
+                                            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 600; line-height: 120%;">
+                                           Dashoboard Design for Continental Task </h2>
+
+                                        <div class="text-block-7"
+                                            style="line-height: 150%; font-size: 1vw; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                                            This is a quick task focused on truck fleet managers to ideate tools for monitoring and managing a fleet of trucks.</div>
+                                    </div>
+                                    <div class="div-block-48">
+                                        <div class="pill-category"
+                                            style="padding-top: 8px;padding-bottom: 8px;padding-left: 12px;padding-right: 12px; ">
+                                            <div fs-cmsfilter-field="category" class="text-2"><span
+                                                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 1.1em; font-weight: 500;">Quick Task</span></div>
+                                        </div>
+                                        <div class="pill-category"
+                                            style="padding-top: 8px;padding-bottom: 8px;padding-left: 12px;padding-right: 12px; ">
+                                            <div fs-cmsfilter-field="category" class="text-2"><span
+                                                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 1.1em; font-weight: 500;">Dashoboard</span></div>
+                                        </div>
+                                        <div class="pill-category"
+                                            style="padding-top: 8px;padding-bottom: 8px;padding-left: 12px;padding-right: 12px; ">
+                                            <div fs-cmsfilter-field="category" class="text-2"><span
+                                                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 1.1em; font-weight: 500;">12 hours UI UX task</span></div>
+                                        </div>
+                                      
 
 
                                     </div>
@@ -752,6 +846,63 @@
                                             style="padding-top: 8px;padding-bottom: 8px;padding-left: 12px;padding-right: 12px; ">
                                             <div fs-cmsfilter-field="category" class="text-2"><span
                                                     style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 1.1em; font-weight: 500;">Observable HQ</span>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div role="listitem" class="collection-item-2 w-dyn-item">
+                        <div class="cms-image-work">
+                            <img src="content/covers/Cartographycover2.png" loading="lazy" alt="Concordium"
+                                sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 37vw" class="image-11" />
+                        </div>
+                        <a href="cartography.html" class="link-block-2 w-inline-block">
+                            <div class="cms-work-content">
+                                <div class="div-block-49">
+                                    <div class="frame-16 flipped">
+                                        <div class="blue-arrow w-embed">
+                                            <svg width="20" height="19" viewBox="0 0 20 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0.642334 8.56581C0.642334 8.38102 0.734729 8.28862 0.91952 8.28862L13.2859 8.28862C14.1753 8.28862 14.6221 7.21455 13.9951 6.5837L9.29449 1.85395C9.1625 1.72196 9.1625 1.58996 9.29449 1.45797L10.3636 0.428425C10.4956 0.296431 10.621 0.289831 10.7398 0.408625L19.2534 9.15978C19.3854 9.29177 19.392 9.41717 19.2732 9.53596L10.7596 18.2871C10.6276 18.4191 10.4956 18.4191 10.3636 18.2871L9.29449 17.2576C9.1625 17.1256 9.1625 16.9936 9.29449 16.8616L13.9848 12.1131C14.6092 11.4809 14.1605 10.4091 13.272 10.4103L0.91952 10.4269C0.73473 10.4269 0.642334 10.3345 0.642334 10.1497L0.642334 8.56581Z"
+                                                    fill="currentColor" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="div-block-50">
+                                        <h2 class="heading-49"
+                                            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 600; line-height: 120%;">
+                                            Vivekananda's Journey </br>To Chicago </h2>
+
+                                        <div class="text-block-7"
+                                            style="line-height: 150%; font-size: 1vw; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                                            An interactive storytelling project that visualizes geographic and cultural data through dynamic visual elements. It explores how data-driven design can narrate complex stories using maps and motion.</div>
+                                    </div>
+                                    <div class="div-block-48">
+                                        <div class="pill-category"
+                                            style="padding-top: 8px;padding-bottom: 8px;padding-left: 12px;padding-right: 12px; ">
+                                            <div fs-cmsfilter-field="category" class="text-2"><span
+                                                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 1.1em; font-weight: 500;">Creative Project</span></div>
+                                        </div>
+                                        <div class="pill-category"
+                                            style="padding-top: 8px;padding-bottom: 8px;padding-left: 12px;padding-right: 12px; ">
+                                            <div fs-cmsfilter-field="category" class="text-2"><span
+                                                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 1.1em; font-weight: 500;">Data Viz</span></div>
+                                        </div>
+                                        <div class="pill-category"
+                                            style="padding-top: 8px;padding-bottom: 8px;padding-left: 12px;padding-right: 12px; ">
+                                            <div fs-cmsfilter-field="category" class="text-2"><span
+                                                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 1.1em; font-weight: 500;">D3.js</span>
+                                            </div>
+                                        </div>
+                                        <div class="pill-category"
+                                            style="padding-top: 8px;padding-bottom: 8px;padding-left: 12px;padding-right: 12px; ">
+                                            <div fs-cmsfilter-field="category" class="text-2"><span
+                                                    style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 1.1em; font-weight: 500;">storytelling</span>
                                             </div>
                                         </div>
 
